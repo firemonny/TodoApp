@@ -14,8 +14,9 @@
 		FEA150BE218CEF7A003381AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA150BD218CEF7A003381AD /* Assets.xcassets */; };
 		FEA150C1218CEF7A003381AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA150BF218CEF7A003381AD /* LaunchScreen.storyboard */; };
 		FEA150D0218F7756003381AD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA150CF218F7756003381AD /* Default-568h@2x.png */; };
-		FEA150F421909813003381AD /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEA150F221909813003381AD /* DataModel.xcdatamodeld */; };
 		FEF5E0CD2190F777007FF57B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5E0CC2190F777007FF57B /* CategoryViewController.swift */; };
+		FEF5E0D1219251CA007FF57B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5E0D0219251CA007FF57B /* Item.swift */; };
+		FEF5E0D3219251D6007FF57B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5E0D2219251D6007FF57B /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		FEA150C0218CEF7A003381AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEA150C2218CEF7A003381AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEA150CF218F7756003381AD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FEA150F321909813003381AD /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		FEF5E0CC2190F777007FF57B /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		FEF5E0D0219251CA007FF57B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FEF5E0D2219251D6007FF57B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,6 @@
 				FEA150CB218F516F003381AD /* Controllers */,
 				FEA150CA218F5148003381AD /* Data Model */,
 				FEA150BD218CEF7A003381AD /* Assets.xcassets */,
-				FEA150F221909813003381AD /* DataModel.xcdatamodeld */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -100,6 +101,8 @@
 		FEA150CA218F5148003381AD /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				FEF5E0D2219251D6007FF57B /* Category.swift */,
+				FEF5E0D0219251CA007FF57B /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -252,10 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF5E0D1219251CA007FF57B /* Item.swift in Sources */,
 				FEF5E0CD2190F777007FF57B /* CategoryViewController.swift in Sources */,
 				FEA150B9218CEF77003381AD /* TodoListViewController.swift in Sources */,
-				FEA150F421909813003381AD /* DataModel.xcdatamodeld in Sources */,
 				FEA150B7218CEF77003381AD /* AppDelegate.swift in Sources */,
+				FEF5E0D3219251D6007FF57B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,19 +461,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FEA150F221909813003381AD /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FEA150F321909813003381AD /* DataModel.xcdatamodel */,
-			);
-			currentVersion = FEA150F321909813003381AD /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FEA150AB218CEF77003381AD /* Project object */;
 }
